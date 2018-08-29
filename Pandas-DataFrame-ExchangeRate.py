@@ -6,10 +6,12 @@ Created on Wed Aug 22 14:25:02 2018
 """
 import requests
 import pandas
+import time
 
 url = "https://rate.bot.com.tw/xrt?Lang=zh-TW"
-res = requests.get(url)
+#res = requests.get(url)
 #print (res1.text)
+time.sleep(3)   # evading url denied
 dfs = pandas.read_html(url)
 extab = dfs[0]
 extab = extab.iloc[:,0:5]

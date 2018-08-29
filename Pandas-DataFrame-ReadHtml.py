@@ -8,8 +8,14 @@ import requests
 import pandas as pd
 import time
 
+url = "https://rate.bot.com.tw/xrt?Lang=zh-TW"
+# python request.get
+time.sleep(3)   # evading url denied
+res = requests.get(url)
+print (res.text)
 
 # pandas read_html()
+
 time.sleep(3)   # evading url denied
-dfs = pandas.read_html(url)
+dfs = pd.read_html(url)
 extab = dfs[0]
