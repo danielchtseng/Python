@@ -24,14 +24,14 @@ df.info()：關於 DataFrame 的詳細資訊
 df.describe()：關於 DataFrame 各數值變數的描述統計
 """
 
-print(extab.head()) # show only first five elements of the DataFrame
-print("----------------------------------------")
-print(extab.tail()) # show only last five elements of the DataFrame
-print("----------------------------------------")
+#print(extab.head()) # show only first five elements of the DataFrame
+#print("----------------------------------------")
+#print(extab.tail()) # show only last five elements of the DataFrame
+#print("----------------------------------------")
 #print(type(extab))
 #print(extab.shape)
 #print(extab.index)
 #print(extab.columns)
-#print(extab.describe())
+print(extab.describe())
 
 
