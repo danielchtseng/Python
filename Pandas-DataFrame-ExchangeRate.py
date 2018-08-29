@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Aug 22 14:25:02 2018
-
+/
 @author: danieltseng
 """
 import requests
@@ -11,6 +11,8 @@ import time
 url = "https://rate.bot.com.tw/xrt?Lang=zh-TW"
 #res = requests.get(url)
 #print (res1.text)
+
+
 time.sleep(3)   # evading url denied
 dfs = pandas.read_html(url)
 extab = dfs[0]
