@@ -13,18 +13,17 @@ url = "https://www.thsrc.com.tw/tw/TimeTable/SearchResult"
 payload = {     #Dictionary
    'StartStation': '977abb69-413a-4ccf-a109-0272c24fd490',
    'EndStation': '3301e395-46b8-47aa-aa37-139e15708779',
-   'SearchDate': '2018/08/20',
+   'SearchDate': '2018/09/06',
    'SearchTime': '18:00',
    'SearchWay': 'DepartureInMandarin'     
 }
 
 response = requests.post(url,data=payload)
-print(response.text)
-
-soup = BeautifulSoup(response,'html.parser')
+html = response.text
+soup = BeautifulSoup(html,'html.parser')
 #print(soup)
+print(soup.prettify())
 
-#print soup.select()
 
 
 
